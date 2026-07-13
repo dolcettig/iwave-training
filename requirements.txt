@@ -1,0 +1,30 @@
+# Scientific Python
+numpy
+scipy
+pandas
+matplotlib
+xarray
+netCDF4
+scikit-image
+scikit-learn
+numba
+
+# Image/video
+opencv-python
+imageio
+
+# GIS
+pyproj
+geopandas
+cartopy
+contextily
+rasterio
+
+# Utilities
+tqdm
+pytest
+ipykernel
+
+# Main packages
+iwave[extra]==0.4.0
+pyopenrivercam

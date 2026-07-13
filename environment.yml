@@ -1,0 +1,49 @@
+name: iwave-training
+
+channels:
+  - conda-forge
+
+dependencies:
+  # Python
+  - python=3.11
+  - pip
+
+  # Jupyter
+  - ipykernel
+
+  # Scientific Python
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - xarray
+  - netcdf4
+  - scikit-image
+  - scikit-learn
+  - numba
+
+  # Image/video
+  - opencv
+  - ffmpeg
+  - imageio
+
+  # GIS
+  - pyproj
+  - geopandas
+  - cartopy
+  - contextily
+  - rasterio
+
+  # Utilities
+  - tqdm
+  - pytest
+
+  # (optional) temporary pin because newer certificates/OpenSSL
+  # triggered the Windows SSL issue we observed.
+  - openssl=3.6.2
+  - ca-certificates=2026.4.22
+  - certifi=2026.4.22
+
+  - pip:
+      - iwave[extra]==0.4.0
+      - pyopenrivercam
