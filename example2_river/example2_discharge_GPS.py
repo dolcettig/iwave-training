@@ -20,8 +20,8 @@ output_path = ROOT / "results" / f"{filename}_transect_restults.csv"
 
 surface_elevation = 0
 velocity_index = 0.85
-ds_transect = 0.5      # m - resolution along transect
-average_width = 2     # m - length of streamwise averaging segment
+ds_transect = 1      # m - resolution along transect
+average_width = 5     # m - length of streamwise averaging segment
 n_average = 9 # number of interpolation points along streamwise averaging segment
 dq = 0.015
 

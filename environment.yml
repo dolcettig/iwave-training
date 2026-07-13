@@ -1,5 +1,10 @@
 name: iwave-training
 
+  
+  - pip:
+      - iwave[extra]==0.4.0
+      - pyopenrivercam
+
 channels:
   - conda-forge
 
@@ -32,6 +37,7 @@ dependencies:
   - cartopy
   - contextily
   - rasterio
+  - openpyxl
 
   # Utilities
   - tqdm
@@ -43,6 +49,3 @@ dependencies:
   - ca-certificates=2026.4.22
   - certifi=2026.4.22
 
-  - pip:
-      - iwave[extra]==0.4.0
-      - pyopenrivercam
