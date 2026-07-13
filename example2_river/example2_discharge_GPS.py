@@ -16,6 +16,7 @@ from common.utils import median_filter_iwave
 filename = "ex2R_vid" # video ID
 bathymetry_path = ROOT / "data" / "GCPs" / "bathymetry_GPS.csv"
 velocity_path = ROOT / "results" / f"{filename}_results_georeferenced.nc"
+output_path = ROOT / "results" / f"{filename}_transect_restults.csv"
 
 surface_elevation = 0
 velocity_index = 0.85
@@ -112,7 +113,7 @@ out = pd.DataFrame({
     "vn": vn,
     "unit_discharge": velocity_index*vn*depth
 })
-out.to_csv("transect_results.csv", index=False)
+out.to_csv(output_path, index=False)
 
 
 speed = np.sqrt(vE**2 + vN**2)
